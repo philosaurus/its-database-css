@@ -1,3 +1,27 @@
-body {
-	background: black !important;
+.ftable {
+	width: fit-content;
+	oveflow: hidden;
+	border: 3px solid black;
+	border-radius: 10px;
+	margin: auto;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.ftable thead {
+	background: black;
+	color: white;
+}
+
+.ftable tbody tr td {
+	padding: 0 0.5em;
+}
+
+.ftable tbody tr td:not(:last-child) {
+	border-right: 1px gray dashed;
+}
+
+.ftable tbody tr:not(:last-child) td {
+	border-bottom: 1px gray dashed;
 }
